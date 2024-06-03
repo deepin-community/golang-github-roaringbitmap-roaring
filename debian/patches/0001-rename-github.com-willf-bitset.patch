@@ -1,0 +1,64 @@
+From: Shengjing Zhu <zhsj@debian.org>
+Date: Wed, 1 Feb 2023 01:11:13 +0800
+Subject: rename github.com/willf/bitset
+
+Origin: backport, https://github.com/RoaringBitmap/roaring/commit/258dc1c0
+---
+ benchmark_test.go  | 2 +-
+ roaring_test.go    | 2 +-
+ roaringcow_test.go | 2 +-
+ smat.go            | 2 +-
+ 4 files changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/benchmark_test.go b/benchmark_test.go
+index b90a5fe..dd5d3a6 100644
+--- a/benchmark_test.go
++++ b/benchmark_test.go
+@@ -7,7 +7,7 @@ import (
+ 	"runtime"
+ 	"testing"
+ 
+-	"github.com/willf/bitset"
++	"github.com/bits-and-blooms/bitset"
+ )
+ 
+ // BENCHMARKS, to run them type "go test -bench Benchmark -run -"
+diff --git a/roaring_test.go b/roaring_test.go
+index 2face76..2905fc1 100644
+--- a/roaring_test.go
++++ b/roaring_test.go
+@@ -10,7 +10,7 @@ import (
+ 	"unsafe"
+ 
+ 	"github.com/stretchr/testify/assert"
+-	"github.com/willf/bitset"
++	"github.com/bits-and-blooms/bitset"
+ )
+ 
+ func TestReverseIteratorCount(t *testing.T) {
+diff --git a/roaringcow_test.go b/roaringcow_test.go
+index 9de9fcc..54c0fe5 100644
+--- a/roaringcow_test.go
++++ b/roaringcow_test.go
+@@ -9,7 +9,7 @@ import (
+ 	"unsafe"
+ 
+ 	"github.com/stretchr/testify/assert"
+-	"github.com/willf/bitset"
++	"github.com/bits-and-blooms/bitset"
+ )
+ 
+ func TestCloneOfCOW(t *testing.T) {
+diff --git a/smat.go b/smat.go
+index 9da4756..972cd24 100644
+--- a/smat.go
++++ b/smat.go
+@@ -63,7 +63,7 @@ import (
+ 	"sort"
+ 
+ 	"github.com/mschoch/smat"
+-	"github.com/willf/bitset"
++	"github.com/bits-and-blooms/bitset"
+ )
+ 
+ // fuzz test using state machine driven by byte stream.

@@ -1,5 +1,36 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-roaringbitmap-roaring (0.4.21-2) unstable; urgency=medium
 
-  * Initial release
+  * Team upload
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Debian Janitor ]
+  * Bump debhelper from old 12 to 13.
+  * Set upstream metadata fields: Repository-Browse.
+  * Update standards version to 4.6.2, no changes needed.
+
+  [ Shengjing Zhu ]
+  * Update uscan watch file version to 4
+  * Update section to golang
+  * Update maintainer address to team+pkg-go@tracker.debian.org
+  * Add Rules-Requires-Root
+  * Add Multi-Arch hint
+  * Drop unused dependency golang-github-smartystreets-goconvey-dev
+  * Replace golang-github-willf-bitset-dev with
+    golang-github-bits-and-blooms-bitset-dev
+
+ -- Shengjing Zhu <zhsj@debian.org>  Wed, 01 Feb 2023 01:15:09 +0800
+
+golang-github-roaringbitmap-roaring (0.4.21-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release. Closes: #952196.
+    - Build-Depends: golang-github-stretchr-testify-dev
+  * Standards-Version: 4.5.0
+  * debhelper compatibility level 12
+
+ -- Drew Parsons <dparsons@debian.org>  Fri, 06 Mar 2020 18:50:36 +0800
+
+golang-github-roaringbitmap-roaring (0.4.7-1) unstable; urgency=medium
+
+  * Initial release (Closes: #900211)
+
+ -- Alexandre Viau <aviau@debian.org>  Sun, 27 May 2018 13:11:52 -0400
